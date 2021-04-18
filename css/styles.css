@@ -1,0 +1,57 @@
+.results {
+  font-size: 14px;
+}
+
+.name {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.tags {
+  border-bottom: 3px dotted lightgrey;
+  padding-bottom: 10px;
+  max-width: 300px;
+}
+
+.loading {
+  font-style: italic;
+  margin: 10px 0 0 40px;
+}
+
+.loading-ball {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-left: 50px;
+  animation-name: pulse;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+  background-color: hsl(195, 75%, 80%);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+  }
+
+  50% {
+    transform: scale(1);
+    background-color: hsl(195, 75%, 50%);
+  }
+
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+.error {
+  color: red;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 2px dotted red;
+  background: hsl(0, 73%, 88%);
+  max-width: 300px;
+}
